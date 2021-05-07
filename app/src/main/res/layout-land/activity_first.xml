@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".FirstActivity">
+    <RelativeLayout
+        android:background="@drawable/background_first_activity"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:shadowColor="@color/white"
+            android:shadowDx="10"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/color_background"
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/image_virus_png"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/virus"
+        android:contentDescription="@string/todo" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_virus_png">
+        <TextView
+            android:id="@+id/text_view_downloading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:shadowColor="@color/white"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="@string/download"
+            android:textAlignment="center"
+            android:textColor="@color/color_background"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/select_a_country"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/select_country_one"
+        android:background="@drawable/style_spinner"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:outlineSpotShadowColor="#8B8C8D"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:targetApi="p" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:showText="true"
+        android:textOff="off"
+        android:textOn="on"
+        android:onClick="checkSwitch"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track"
+        app:layout_constraintEnd_toEndOf="@+id/select_country_one"
+        app:layout_constraintStart_toStartOf="@+id/select_country_one"
+        app:layout_constraintTop_toBottomOf="@+id/select_country_one" />
+
+    <Spinner
+        android:id="@+id/select_country_two"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style_spinner"
+        android:outlineSpotShadowColor="#8B8C8D"
+        app:layout_constraintEnd_toEndOf="@+id/select_country_one"
+        app:layout_constraintStart_toStartOf="@+id/select_country_one"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:targetApi="p" />
+
+    <Button
+        android:id="@+id/button_display"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/display_button"
+        android:onClick="display"
+        android:text="@string/button_display"
+        app:layout_constraintEnd_toEndOf="@+id/select_country_one"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/select_country_one"
+        app:layout_constraintTop_toBottomOf="@+id/select_country_two" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_Back_main_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:backgroundTint="#68AD60"
+        app:elevation="20dp"
+        app:fabSize="normal"
+        android:onClick="back_to_previous_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_display"
+        app:maxImageSize="75dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="exit"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        app:backgroundTint="#68AD60"
+        app:elevation="20dp"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_display"
+        app:maxImageSize="75dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

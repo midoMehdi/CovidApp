@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CovidApp</string>
+    <string name="download">Telechargements...</string>
+    <string name="title_activity_main">COVID-19 dans le monde</string>
+    <string name="cases">Les cas:</string>
+    <string name="deaths">Les décès:</string>
+    <string name="recovered">Les rétablis:</string>
+    <string name="display_detail_country">Afficher les détails par pays > ></string>
+    <string name="display_detail_continent">Afficher les détails par continent > ></string>
+    <string name="select_a_country">Choisissez un pays:</string>
+    <string name="button_display">Afficher</string>
+    <string name="country">Pays:</string>
+    <string name="last_update">Dernière mise à jour :</string>
+    <string name="new_cases">Nouveaux cas:</string>
+    <string name="new_deaths">Nouveaux décès:</string>
+    <string name="new_recovered">Nouveaux Rétablis :</string>
+    <string name="active_cases">Cas actif :</string>
+    <string name="critical_cases">Cas critique :</string>
+    <string name="cases_per_one_million">Cas par million :</string>
+    <string name="deaths_per_one_million">Décès pour un million :</string>
+    <string name="tests_per_One_Million">Tests par million :</string>
+    <string name="compare_two_country">Comparer deux pays</string>
+    <string name="empty">Vide</string>
+    <string name="south_america">Amerique du sud</string>
+    <string name="africa">Afrique</string>
+    <string name="north_america">Amerique du Nord</string>
+    <string name="europe">Europe</string>
+    <string name="asia">Asie</string>
+    <string name="select_at_least_one_country">Selectionnez au moins un pays</string>
+    <string name="save">Sauvegarder</string>
+    <string name="title">Statistiques de Covid 19</string>
+    <string name="successful_saved">Sauvegarde réussi</string>
+</resources>
